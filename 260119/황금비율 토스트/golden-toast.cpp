@@ -11,8 +11,10 @@ int main() {
     cin >> n >> m;
     cin >> s;
     string st;
-    cin >> st;
     list<char>l;
+    for(int i=0; i<n; i++){
+        l.push_back(s[i]);
+    }
     list<char>::iterator it;
     
     it = l.end();
