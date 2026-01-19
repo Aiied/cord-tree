@@ -39,7 +39,7 @@ int main() {
         }
         else{
             if(it!=l.end()){
-                l.erase(it);
+                it = l.erase(it);
             }                        
         }
 
