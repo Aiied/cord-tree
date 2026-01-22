@@ -12,11 +12,11 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
+    int du = 1;
     for(int i = 0; i<6; i++){
         queue<int>q[10];
-        int du = 1;
         for(int j = 0; j<n; j++){
-            int x = arr[j]/du%10;
+            int x = (arr[j]/du)%10;
             q[x].push(arr[j]);
         }
         int ind = 0;
@@ -27,7 +27,7 @@ int main() {
                 ind++;
             }
         }
-        du *= 10;
+        du = du*10;
     }
     for(int i = 0; i<n; i++){
         cout << arr[i] << " ";
