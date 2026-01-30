@@ -6,6 +6,7 @@ int n;
 int arr[100001];
 
 void heapify(int x,int max){
+    if(x > max/2) return;
 
     int largest = x;
     if(arr[largest]<arr[x*2] && x*2 <= max){
